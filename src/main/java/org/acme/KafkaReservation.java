@@ -10,6 +10,6 @@ public class KafkaReservation {
 
     @Incoming("reservation-topic")
     public void consumeJsonMessage(ReservationCreateDTO reservationCreateDTO) {
-        System.out.println("Received JSON message: " + reservationCreateDTO);
+        System.out.println("Reservation created successfully!  \n" +  reservationCreateDTO);
     }
 }
